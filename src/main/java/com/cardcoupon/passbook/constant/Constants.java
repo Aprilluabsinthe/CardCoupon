@@ -9,7 +9,7 @@ public class Constants {
     public static final String TEMPLATE_TOPIC = "merchants-template";
 
     /** token string */
-    public static final String TEMPLATE_STRING = "token";
+    public static final String TOKEN_STRING = "token";
 
     /** token information */
     public static final String TOKEN = "coupon-passbook-merchants";
