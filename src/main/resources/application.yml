@@ -1,0 +1,23 @@
+#spring.datasource.url=jdbc:mysql://127.0.0.1:3306/passbook
+#spring.datasource.username=root
+#spring.datasource.password=
+
+spring:
+  application:
+    name: CardCoupoun_Merchants
+    datasource:
+      url: jdbc:mysql://127.0.0.1:3306/passbook?autoReconnect=true
+      username: root
+      password:
+    kafka:
+      bootstrap-servers: 127.0.0.1:9092
+      consumer:
+        group-id: passbook
+      listener:
+        concurrency: 4
+server:
+  port:9527
+logging:
+  level: debug
+  file:
+    name: cardcoupon_merchants.log
