@@ -17,7 +17,6 @@ spring:
         concurrency: 4
 server:
   port:9527
-
 logging:
   level: debug
   file:

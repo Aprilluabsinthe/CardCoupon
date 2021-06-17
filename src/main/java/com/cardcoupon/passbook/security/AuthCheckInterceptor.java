@@ -17,7 +17,7 @@ public class AuthCheckInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        String token = HttpServletRequest.getHeader(Constants.TOKEN_STRING);
+        String token = request.getHeader(Constants.TOKEN_STRING);
         // the token is empty
         if (StringUtils.isEmpty(token)){
             throw new Exception("Can not find " + Constants.TOKEN_STRING + "in  Header!");

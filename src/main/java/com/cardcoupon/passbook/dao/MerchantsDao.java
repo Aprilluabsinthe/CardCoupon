@@ -3,6 +3,8 @@ package com.cardcoupon.passbook.dao;
 import com.cardcoupon.passbook.entity.*;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.Optional;
+
 /**
  * The interface of Merchants Dao
  */
@@ -12,7 +14,7 @@ public interface MerchantsDao extends JpaRepository<Merchants,Integer> {
      * @param id the id to be found
      * @return {@link Merchants}
      */
-    Merchants findById(Integer id);
+    Optional<Merchants> findById(Integer id);
 
     /**
      * get Merchants by given name
