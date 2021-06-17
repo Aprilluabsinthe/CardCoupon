@@ -7,4 +7,4 @@ CREATE TABLE `merchants`(
     `address` varchar(64) COLLATE utf8_bin NOT NULL COMMENT 'Contact Address',
     `is_audit` BOOLEAN COLLATE utf8_bin NOT NULL COMMENT 'Is audited or not',
     PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARACTER=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
