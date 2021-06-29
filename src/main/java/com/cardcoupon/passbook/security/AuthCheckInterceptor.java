@@ -24,7 +24,7 @@ public class AuthCheckInterceptor implements HandlerInterceptor {
         }
         // the token is not the authorized one
         if(!token.equals(Constants.TOKEN)){
-            throw new Exception("The token in header is " + Constants.TOKEN + ", invalid");
+            throw new Exception("The token in header is " + Constants.TOKEN_STRING + ", invalid");
         }
         AccessContext.setToken(token);
         return true;

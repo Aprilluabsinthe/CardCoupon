@@ -5,18 +5,22 @@
 spring:
   application:
     name: CardCoupoun_Merchants
-    datasource:
-      url: jdbc:mysql://127.0.0.1:3306/passbook?autoReconnect=true
-      username: root
-      password:
-    kafka:
-      bootstrap-servers: 127.0.0.1:9092
-      consumer:
-        group-id: passbook
-      listener:
-        concurrency: 4
+  jpa:
+    hibernate:
+      use-new-id-generator-mappings: false
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/passbook?autoReconnect=true&useSSL=false
+    username: root
+    password:
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    consumer:
+      group-id: passbook
+    listener:
+      concurrency: 4
 server:
-  port:9527
+  port: 9527
+
 logging:
   level:
     root: info
