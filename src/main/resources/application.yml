@@ -19,6 +19,7 @@ server:
   port:9527
 
 logging:
-  level: debug
+  level:
+    root: info
   file:
     name: cardcoupon_merchants.log

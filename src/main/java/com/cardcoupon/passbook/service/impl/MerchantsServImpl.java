@@ -40,7 +40,7 @@ public class MerchantsServImpl implements IMerchantsServ {
     /**
      * Create merchants according to requests
      * @param request {@link CreateMerchantsRequest} the request to create a merchant
-     * @return
+     * @return {@link Response} Response
      */
     @Override
     @Transactional
