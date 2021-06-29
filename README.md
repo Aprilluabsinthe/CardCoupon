@@ -5,10 +5,13 @@ You can run the application
 # Requirements
 For building and running the application you need:
 
-<a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html">JDK 1.8</a>
-<a href="https://maven.apache.org/">Maven</a>
-mySQL
-Kafka
+- <a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html">JDK 1.8</a>
+
+- <a href="https://maven.apache.org/">Maven</a>
+
+- <a href="https://dev.mysql.com/downloads/installer/">mySQL</a>
+
+- <a href="https://kafka.apache.org/downloads">Kafka</a>
 
 # Start background services
 ## start and log into sql:
