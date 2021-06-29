@@ -1,0 +1,31 @@
+### Merchants release coupon
+POST http://localhost:9527/merchants/drop
+Content-Type: application/json
+
+{
+  "background":6,
+  "desc":"this is a coupon for roasted turkey",
+  "end":1626665871000,
+  "hasToken":false,
+  "id":13,
+  "limit":5000,
+  "start":1623209872000,
+  "summary":"Summary: food coupon for roasted turkey",
+  "title":"turkey coupon"
+}
+
+### create merchants and store in MySQL
+POST http://localhost:9527/merchants/create
+Content-Type: application/json
+
+{
+  "name": "Target",
+  "logoUrl": "www.target.com",
+  "businessLicenseUrl": "www.target.com",
+  "phone": "110-111-3418",
+  "address": "San Fransisco,CA"
+}
+
+### get merchants from MySql database
+GET http://localhost:9527/merchants/11
+Accept: application/json

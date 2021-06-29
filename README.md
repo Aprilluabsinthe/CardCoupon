@@ -77,7 +77,8 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-## url request
+# request API
+you can also find requests in *merchants.http*
 1. get merchants from database
 ```
 http://localhost:9527/merchants/{id}
