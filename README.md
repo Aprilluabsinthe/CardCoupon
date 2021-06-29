@@ -80,11 +80,11 @@ mvn spring-boot:run
 http://localhost:9527/merchants/{id}
 ```
 #### example:
-![img_2.png](img_2.png)
+![get merchants from database](static/img_2.png)
 
 
 2. create merchants
-### get merchants from database
+### create merchants to MySQL
 ```
 http://localhost:9527/merchants/create
 ```
@@ -98,13 +98,13 @@ http://localhost:9527/merchants/create
     "address": "San Diego,CA"
 }
 ```
-![img_3.png](img_3.png)
+![create merchants](static/img_3.png)
 
 there should be new records in mysql database.
-![img_4.png](img_4.png)
+![mysql database](static/img_4.png)
 
 3. drop template
-### get merchants from database
+### drop template to Kafka
 ```
 http://localhost:9527/merchants/create
 ```
@@ -123,5 +123,5 @@ http://localhost:9527/merchants/create
 }
 ```
 there shoule be new templates in KAFKA
-![img_6.png](img_6.png)
-![img_5.png](img_5.png)
+![drop template url request](static/img_6.png)
+![kafka](static/img_5.png)
